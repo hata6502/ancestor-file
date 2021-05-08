@@ -6,7 +6,7 @@ if [ $# != 1 ]; then
   exit 1
 fi
 
-current_directory=$(pwd)
+current_directory="$(pwd)"
 
 while :; do
   current_file="${current_directory%/}/$1"
@@ -21,5 +21,5 @@ while :; do
     exit 1
   fi
 
-  current_directory=$(dirname "${current_directory}")
+  current_directory="$(dirname "${current_directory}")"
 done
