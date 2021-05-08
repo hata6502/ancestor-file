@@ -1,0 +1,51 @@
+{
+  "name": "ancestor-file",
+  "version": "1.0.0",
+  "description": "A CLI to find a file from the ancestor directories.",
+  "keywords": [
+    "ancestor",
+    "file",
+    "cli",
+    "find",
+    "directory"
+  ],
+  "homepage": "https://github.com/hata6502/ancestor-file#readme",
+  "bugs": {
+    "url": "https://github.com/hata6502/ancestor-file/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hata6502/ancestor-file.git"
+  },
+  "funding": {
+    "type": "github",
+    "url": "https://github.com/sponsors/hata6502"
+  },
+  "license": "MIT",
+  "author": "Tomoyuki Hata",
+  "bin": {
+    "anc": "src/index.sh"
+  },
+  "files": [
+    "src"
+  ],
+  "release": {
+    "branches": [
+      "+([0-9])?(.{+([0-9]),x}).x",
+      "main",
+      "next",
+      "next-major",
+      {
+        "name": "beta",
+        "prerelease": true
+      },
+      {
+        "name": "alpha",
+        "prerelease": true
+      }
+    ]
+  },
+  "devDependencies": {
+    "semantic-release": "^17.4.2"
+  }
+}
